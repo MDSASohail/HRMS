@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/HRMS/static/css/main.3a4c1ff7.css",
+    "main.js": "/HRMS/static/js/main.67af6708.js",
+    "static/js/787.95beb953.chunk.js": "/HRMS/static/js/787.95beb953.chunk.js",
+    "static/media/img2.png": "/HRMS/static/media/img2.def902c7598d48308440.png",
+    "index.html": "/HRMS/index.html",
+    "main.3a4c1ff7.css.map": "/HRMS/static/css/main.3a4c1ff7.css.map",
+    "main.67af6708.js.map": "/HRMS/static/js/main.67af6708.js.map",
+    "787.95beb953.chunk.js.map": "/HRMS/static/js/787.95beb953.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a4c1ff7.css",
+    "static/js/main.67af6708.js"
+  ]
+}
