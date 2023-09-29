@@ -37,13 +37,13 @@ function MemberPage() {
                   </div>
                   <div>
                       {
-                        eachMember.map((item)=>{
+                        eachMember.map((item,index)=>{
                            return (
-                            <div className=' mb-20 flex mx-20 items-center p-3  ' id='memberDiv'>
+                            <div key={index} className=' mb-20 flex mx-20 items-center p-3  ' id='memberDiv'>
                             <div id='memberImgDiv' className='memberInnderDiv flex-1  p-4'>
                               <img src={item.img} alt="Img" />
                             </div>
-                            <div className='flex-1  pl-8 mt-8 ' >
+                            <div className='flex-1  pl-8 mt-8 memberDetailDiv' >
                                  <p className='text-xl'><strong>Name : </strong> <span>{item.name}</span></p>
                                  <p className='text-xl'><strong>University Roll No. : </strong> <span>{item.roll}</span></p>
                                  <p className='text-xl'><strong>Registration No. : </strong> <span>{item.regi}</span></p>

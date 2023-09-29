@@ -1,14 +1,21 @@
 body{
   /* background: linear-gradient(to bottom, #3498db, #e67e22); */
-  background: linear-gradient(to bottom, #3498db, #e67e22, #2ecc71);
+  /* background: linear-gradient(to bottom, #3498db, #e67e22, #2ecc71); */
 
 
 
 
 }
 
+*{
+   padding: 0px;
+   margin: 0px;
+}
+   
+
 .heading{
   font-size: 2.5rem;
+  
 }
 
 .hrms
@@ -18,11 +25,17 @@ body{
   animation: span 1s ;
 }
 
-#memberImgDiv
+
+
+.photo-color
 {
-   max-width: 400px;
-   max-height: 400px;
-   
+    filter: grayscale(1);
+    transition: filter 0.3s;
+}
+
+.photo-color:hover
+{
+    filter: grayscale(0);
 }
 
 #memberDiv
@@ -41,24 +54,128 @@ body{
   
 }
 
-#memberDiv:hover
+
+#memberImgDiv
 {
-   /* background: linear-gradient(right,red); */
+    width: 300px;
+    height: 400px;
    
+    /* overflow: hidden; */
 }
 
+#memberImg
+{
+  max-width: 400px;
+}
+
+
+.formDiv
+{
+  width: 600px;
+  position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     box-shadow: 2px 2px 6px;
+}
+
+
+.inputBorder
+{
+    box-shadow: 2px 2px 4px;
+}
+
+
+.EmployDetailDiv
+{
+   /* border: 2px solid red; */
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 15px;
+}
+
+.EmployDetailDiv input
+{
+   border: 1px solid gray;
+   font-size: 1.5rem;
+   outline: none;
+   padding: 2px;
+}
+
+.EmployDetailDiv select
+{
+     border: 1px solid gray;
+     font-size: 1.5rem;
+     padding: 2px;
+}
+
+
+.navWidth
+{
+   max-width: 230px;
+}
+
+
+.leaveRequestDiv
+{
+    box-shadow: 4px 1px 2px black;
+}
+
+@media (min-width:701px)
+{
+  #show{
+     display: none;
+  }
+
+  #navbar
+  {
+     transform: translate(0px);
+  }
+}
 @media (max-width:700px)
 {
   #memberDiv
   {
       flex-direction: column;
-      margin: 18% auto;
+      margin: 18% 10px;
+      /* padding-left: 0px; */
   }
 
   .smallDevice
   {
       font-size: 1.5rem;
   }
+
+  .heading{
+    font-size: 1.5rem;
+  }
+
+  .memberDetailDiv
+  {
+       padding: 0px;
+       
+  }
+
+  .formDiv
+{
+  width: 95%;
+  
+}
+
+    #EmployFormDetail
+    {
+        flex-direction: column;
+    }
+
+    /* #navbar
+    {
+        display: none;
+    } */
+
+    #routes
+    {
+       margin-left: 0px;
+    }
 }
 
 /* @keyframes span
